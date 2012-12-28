@@ -1,0 +1,397 @@
+<!-- INCLUDE overall_header.html -->
+
+<script type="text/javascript">
+function anzeigen(das) {
+ if (document.getElementById(das).style.display=='none') {
+  document.getElementById(das).style.display='block';
+ }
+ else {
+  document.getElementById(das).style.display='none';
+ }
+}
+</script>
+
+<br />
+
+<div align="center">
+
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+<div align="center"><h3>Wähle ein Style | Choose a Style</h3></div>
+<br />
+<table style="border:1px dotted #707070;" width="250" border="1" align="center">
+  <tr>
+    <th scope="row"><div align="center">
+	<a href="javascript:anzeigen('rednblack');"><img src="{T_THEME_PATH}/images/rednblack.png"></a>
+	</div></th>
+    <td><div align="center">
+	<a href="javascript:anzeigen('silverwhite');"><img src="{T_THEME_PATH}/images/silverwhite.png"></a>
+	</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="center">
+	<a href="javascript:anzeigen('softbrown');"><img src="{T_THEME_PATH}/images/softbrown.png"></a>
+	</div></th>
+    <td><div align="center">
+	<a href="javascript:anzeigen('iceblue');"><img src="{T_THEME_PATH}/images/iceblue.png"></a>
+	</div></td>
+  </tr>
+</table>
+<br />
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+</div>
+
+<br />
+
+<div style="display: none;" id="rednblack">
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset>
+	<h3>rednblack</h3>
+
+	<dl>
+		<dt><label>{L_STYLENAME}</label></dt>
+		<dd><span style="color: rgb(220, 30, 50);">r</span><span style="color: rgb(200, 34, 51);">e</span><span style="color: rgb(180, 38, 53);">d</span><span style="color: rgb(160, 41, 54);">n</span><span style="color: rgb(140, 45, 55);">b</span><span style="color: rgb(120, 49, 56);">l</span><span style="color: rgb(100, 53, 58);">a</span><span style="color: rgb(80, 56, 59);">c</span><span style="color: rgb(60, 60, 60);">k</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_STYLEDESCRIPTIONDE}<br />{L_STYLEDESCRIPTIONEN}</label></dt>
+		<dd>Ein schlichtes Design in schwarz, grau und rot tönen.<br />Tinting asimple design in black, gray and red.</dd>
+
+	</dl>
+	<dl>
+		<dt><label>{L_AUTOR}</label></dt>
+		<dd><span style="color: #dc1e32;" class="username-coloured">Avadon</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSION}</label></dt>
+
+		<dd>3.0.3</dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSIONBB}</label></dt>
+		<dd>phpBB 3.0.3</dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DLOAD}</label></dt>
+		<dd><a href="http://www.abdul91.de/forum/dload/rednblack.zip">rednblack.zip</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DEMO}</label></dt>
+		<dd><a href="index.php?style=3">klick</a> für die Demo<br /><a href="index.php?style=3">Click</a> for the demo</dd>
+	</dl>
+
+		<dl>
+		<dt><label>{L_PAYPAL}</label></dt>
+		<dd>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input name="cmd" value="_xclick" type="hidden">
+		<input name="business" value="turan.norm@gmail.com" type="hidden">
+
+		<input name="item_name" value="paypal donation for avadon" type="hidden">
+		<input name="no_note" value="1" type="hidden">
+		<input name="currency_code" value="EUR" type="hidden">
+		<input name="no_shipping" value="2" type="hidden">
+
+		<input name="bn" value="PP-DonationsBF" type="hidden">
+		<input name="tax" value="0" type="hidden">
+		EUR
+		<!--
+		ISO 8859-1 character set overview
+		http://www.htmlhelp.com/reference/charset/
+		//-->
+		<select name="amount">
+
+			<option value="1.00">1.00</option>
+			<option value="2.00">2.00</option>
+			<option value="3.00">3.00</option>
+
+			<option value="4.00">4.00</option>
+			<option value="5.00">5.00</option>
+			<option value="10.00">10.00</option>
+
+			<option value="20.00">20.00</option>
+			<option value="25.00">25.00</option>
+			<option value="50.00">50.00</option>
+
+			<option value="80.00">80.00</option>
+			<option value="100.00">100.00</option>
+		</select>
+		<input src="https://www.paypal.com/de_DE/DE/i/btn/x-click-but03.gif" style="border: 0px none ; background-color: transparent; padding-top: 6px;" type="image">
+		</form>
+		</dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</div>
+
+<br />
+
+<div style="display: none;" id="silverwhite">
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset>
+	<h3>silverwhite</h3>
+
+	<dl>
+		<dt><label>{L_STYLENAME}</label></dt>
+		<dd><span style="color: rgb(76, 127, 168);">s</span><span style="color: rgb(83, 131, 170);">i</span><span style="color: rgb(89, 135, 172);">l</span><span style="color: rgb(96, 139, 174);">v</span><span style="color: rgb(103, 143, 176);">e</span><span style="color: rgb(110, 148, 178);">r</span><span style="color: rgb(116, 152, 180);">w</span><span style="color: rgb(123, 156, 182);">h</span><span style="color: rgb(130, 160, 184);">i</span><span style="color: rgb(136, 164, 186);">t</span><span style="color: rgb(143, 168, 188);">e</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_STYLEDESCRIPTIONDE}/Description:</label></dt>
+		<dd>Ein Design ähnlich wie auf phpBB.com in blau/grauen tönen.<br />A design like phpBB.com in colder colours.</dd>
+
+	</dl>
+	<dl>
+		<dt><label>{L_AUTOR}</label></dt>
+		<dd><span style="color: #dc1e32;" class="username-coloured">Avadon</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSION}</label></dt>
+
+		<dd>3.0.3</dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSIONBB}</label></dt>
+		<dd>phpBB 3.0.3</dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DLOAD}</label></dt>
+		<dd><a href="http://www.abdul91.de/forum/dload/silverwhite.zip">silverwhite.zip</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DEMO}</label></dt>
+		<dd><a href="index.php?style=10">klick</a> für die Demo<br /><a href="index.php?style=10">Click</a> for the demo</dd>
+	</dl>
+
+		<dl>
+		<dt><label>{L_PAYPAL}</label></dt>
+		<dd>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input name="cmd" value="_xclick" type="hidden">
+		<input name="business" value="turan.norm@gmail.com" type="hidden">
+
+		<input name="item_name" value="paypal donation for avadon" type="hidden">
+		<input name="no_note" value="1" type="hidden">
+		<input name="currency_code" value="EUR" type="hidden">
+		<input name="no_shipping" value="2" type="hidden">
+
+		<input name="bn" value="PP-DonationsBF" type="hidden">
+		<input name="tax" value="0" type="hidden">
+		EUR
+		<!--
+		ISO 8859-1 character set overview
+		http://www.htmlhelp.com/reference/charset/
+		//-->
+		<select name="amount">
+
+			<option value="1.00">1.00</option>
+			<option value="2.00">2.00</option>
+			<option value="3.00">3.00</option>
+
+			<option value="4.00">4.00</option>
+			<option value="5.00">5.00</option>
+			<option value="10.00">10.00</option>
+
+			<option value="20.00">20.00</option>
+			<option value="25.00">25.00</option>
+			<option value="50.00">50.00</option>
+
+			<option value="80.00">80.00</option>
+			<option value="100.00">100.00</option>
+		</select>
+		<input src="https://www.paypal.com/de_DE/DE/i/btn/x-click-but03.gif" style="border: 0px none ; background-color: transparent; padding-top: 6px;" type="image">
+		</form>
+
+		</dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</div>
+
+<br />
+
+<div style="display: none;" id="softbrown">
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset>
+	<h3>SoftBrown</h3>
+
+	<dl>
+		<dt><label>{L_STYLENAME}</label></dt>
+		<dd><span style="color: rgb(255, 204, 102);">S</span><span style="color: rgb(253, 208, 119);">o</span><span style="color: rgb(251, 213, 136);">f</span><span style="color: rgb(249, 217, 153);">t</span><span style="color: rgb(247, 221, 170);">B</span><span style="color: rgb(244, 225, 187);">r</span><span style="color: rgb(242, 230, 204);">o</span><span style="color: rgb(240, 234, 221);">w</span><span style="color: rgb(238, 238, 238);">n</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_STYLEDESCRIPTIONDE}/Description:</label></dt>
+		<dd>Ein Design in leichten braun tönen.<br />Trinting a design into easy brownly.</dd>
+
+	</dl>
+	<dl>
+		<dt><label>{L_AUTOR}</label></dt>
+		<dd><span style="color: #dc1e32;" class="username-coloured">Avadon</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSION}</label></dt>
+
+		<dd>3.0.3</dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSIONBB}</label></dt>
+		<dd>phpBB 3.0.3</dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DLOAD}</label></dt>
+		<dd><a href="http://www.abdul91.de/forum/dload/softbrown.zip">SoftBrown.zip</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DEMO}</label></dt>
+		<dd><a href="index.php?style=7">klick</a> für die Demo<br /><a href="index.php?style=7">Click</a> for the demo</dd>
+	</dl>
+
+		<dl>
+		<dt><label>{L_PAYPAL}</label></dt>
+		<dd>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input name="cmd" value="_xclick" type="hidden">
+		<input name="business" value="turan.norm@gmail.com" type="hidden">
+
+		<input name="item_name" value="paypal donation for avadon" type="hidden">
+		<input name="no_note" value="1" type="hidden">
+		<input name="currency_code" value="EUR" type="hidden">
+		<input name="no_shipping" value="2" type="hidden">
+
+		<input name="bn" value="PP-DonationsBF" type="hidden">
+		<input name="tax" value="0" type="hidden">
+		EUR
+		<!--
+		ISO 8859-1 character set overview
+		http://www.htmlhelp.com/reference/charset/
+		//-->
+		<select name="amount">
+
+			<option value="1.00">1.00</option>
+			<option value="2.00">2.00</option>
+			<option value="3.00">3.00</option>
+
+			<option value="4.00">4.00</option>
+			<option value="5.00">5.00</option>
+			<option value="10.00">10.00</option>
+
+			<option value="20.00">20.00</option>
+			<option value="25.00">25.00</option>
+			<option value="50.00">50.00</option>
+
+			<option value="80.00">80.00</option>
+			<option value="100.00">100.00</option>
+		</select>
+		<input src="https://www.paypal.com/de_DE/DE/i/btn/x-click-but03.gif" style="border: 0px none ; background-color: transparent; padding-top: 6px;" type="image">
+		</form>
+		</dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</div>
+
+<br />
+
+<div style="display: none;" id="iceblue">
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset>
+	<h3>IceBlue</h3>
+
+	<dl>
+		<dt><label>{L_STYLENAME}</label></dt>
+		<dd><span style="color: rgb(204, 204, 255);">I</span><span style="color: rgb(170, 196, 255);">c</span><span style="color: rgb(136, 187, 255);">e</span><span style="color: rgb(102, 179, 255);">B</span><span style="color: rgb(68, 170, 255);">l</span><span style="color: rgb(34, 162, 255);">u</span><span style="color: rgb(0, 153, 255);">e</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_STYLEDESCRIPTIONDE}/Description:</label></dt>
+		<dd>Ein etwas "eisiges" Design.<br />An a little "icy" design.</dd>
+
+	</dl>
+	<dl>
+		<dt><label>{L_AUTOR}</label></dt>
+		<dd><span style="color: #dc1e32;" class="username-coloured">Avadon</span></dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSION}</label></dt>
+
+		<dd>3.0.3</dd>
+	</dl>
+	<dl>
+		<dt><label>{L_VERSIONBB}</label></dt>
+		<dd>phpBB 3.0.3</dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DLOAD}</label></dt>
+		<dd><a href="http://www.abdul91.de/forum/dload/IceBlue.zip">IceBlue.zip</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><label>{L_DEMO}</label></dt>
+		<dd><a href="index.php?style=6">klick</a> für die Demo<br /><a href="index.php?style=6">Click</a> for the demo</dd>
+	</dl>
+
+		<dl>
+		<dt><label>{L_PAYPAL}</label></dt>
+		<dd>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input name="cmd" value="_xclick" type="hidden">
+		<input name="business" value="turan.norm@gmail.com" type="hidden">
+
+		<input name="item_name" value="paypal donation for avadon" type="hidden">
+		<input name="no_note" value="1" type="hidden">
+		<input name="currency_code" value="EUR" type="hidden">
+		<input name="no_shipping" value="2" type="hidden">
+
+		<input name="bn" value="PP-DonationsBF" type="hidden">
+		<input name="tax" value="0" type="hidden">
+		EUR
+		<!--
+		ISO 8859-1 character set overview
+		http://www.htmlhelp.com/reference/charset/
+		//-->
+		<select name="amount">
+
+			<option value="1.00">1.00</option>
+			<option value="2.00">2.00</option>
+			<option value="3.00">3.00</option>
+
+			<option value="4.00">4.00</option>
+			<option value="5.00">5.00</option>
+			<option value="10.00">10.00</option>
+
+			<option value="20.00">20.00</option>
+			<option value="25.00">25.00</option>
+			<option value="50.00">50.00</option>
+
+			<option value="80.00">80.00</option>
+			<option value="100.00">100.00</option>
+		</select>
+		<input src="https://www.paypal.com/de_DE/DE/i/btn/x-click-but03.gif" style="border: 0px none ; background-color: transparent; padding-top: 6px;" type="image">
+		</form>
+		</dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</div>
+
+<br />
+
+<!-- INCLUDE overall_footer.html -->

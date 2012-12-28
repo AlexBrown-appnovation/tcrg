@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*$Id: style.css,v 1.3.2.8.2.18 2009/01/26 23:49:06 tombigel Exp $*/
+/**
+ * Tendu Drupal - A CSS Theme For Developers
+ * Author: Tom Bigelajzen (http://drupal.org/user/173787) - http://tombigel.com
+ * 
+ * Please follow the instructions in the comments.
+ * Lines that end with LTR comments are referenced in styl-rtl.css according to Drupal Coding Guidelines
+ * Lines that end with IE, IE6 etc. comments are referenced in ie.css, ie6.css and so on.
+ */
+
+/* Basic CSS Reset */
+body, div,  dl, dt, dd, h1, h2, h3, h4, h5, h6, p, a,
+pre, code, form, fieldset, legend, input, textarea, p, blockquote, table, th, td {margin:0;padding:0;}
+img, fieldset, legend, table, tr, td, th {border:none;}
+table, td{vertical-align:top;text-align:left;}/*LTR*/
+th{vertical-align:middle;text-align:left;}/*LTR*/
+/* Reduced lists reset to margins only, all list styles and paddings remain system/drupal defaults */
+ul, ol{margin:0;}
+
+/* Drupal CSS Defaults reset */
+.profile,
+.node-form .standard{clear:none;}
+.sidebar-region .item-list ul li{list-style-image:none;list-style-type:none;padding:0;margin:0;}
+li.leaf{list-style-image:none;list-style-type:disc}
+button,input.form-submit{cursor:pointer;}
+/* Fix OpenID icon placement */
+#user-login-form li.openid-link, 
+#user-login li.openid-link{padding-left:1.5em;}
+
+/**
+ * The only changes you need to do here are:
+ * 1. Comment/Uncomment the lines that relate to full viewport height
+ * 2. Comment/Uncomment the lines that relate to fixed width or fluid width layout
+ * 3. Set the widths of the page, the content area and the sidebars.
+ *
+ * For readability reasons some selectors has multiple style declerations.
+ * Keep this section clean, add your design CSS in subthemes.
+ */
+
+/**
+ * Full viewport height
+ * Notes:
+ * Remove these lines if you don't need the hight of the #page element to span 100% of the viewport height.
+ */
+/*
+html, body{height:100%;}
+#page{height:auto !important;height:100%;min-height:100%;position:relative;}
+*/
+
+/** 
+ * Stick footer to bottom of the page
+ * Notes:
+ * - Requires the above "Full viewport height", otherwise it can be removed.
+ * - "#footer" height must be an absolute value for this to work right.
+ *   The height of #footer and padding-bottom of ".footer-spacer" must be set concordingly,
+ *   so the footer will not overlay the content of the page.   
+ * - Set the padding and the height according to your design.
+ * - In some edge cases on some browsers the footer will refuse to stick to the bottom,
+ *   one solution that works for me is to move the footer <div> in page.tpl.php
+ *   to be right under the header instead of the end of the page.
+ */
+.footer-spacer{padding-bottom:150px;}
+#footer{position:absolute;bottom:0;z-index:1;overflow:hidden;
+width:960px; height:150px; /*padding:0 50px 30px 50px;*/ margin:auto; text-align:left; background:url('images/ftbg.jpg') 50% bottom no-repeat;}
+
+/**
+ * Fonts
+ * Notes:
+ * - I'm using relative font sizes for 2 reasons:
+ *   1. Accessibility - So users of IE6 will be able to resize fonts.
+ *   2. Font sizes are easier to track this way, you change the size of a font in a parent element
+ *      and all the font sizes in child elements change with it.
+ * - Note that "line-height" unlike "font-size" is relative to the current element and not to a global line height.
+ * - Basic font size 12px, set as .75em of browsers default 16px size.
+ * - For 14px font size change .75em to .85em, note that then the following numbers do not apply.
+ * - Font sizes (when base size is .75em, calculated as desired font size devided by 12):
+ *	 10px = .83em
+ *	 11px = .916em
+ *	 12px = 1em
+ *	 13px = 1.083em
+ *	 14px = 1.166em
+ *	 16px = 1.333em
+ *	 18px = 1.5em
+ *	 20px = 1.666em
+ *   etc...
+ */
+body{font-family:Arial, Helvetica, sans-serif;font-size:100%;}/*LTR*/ /*IE*/
+#page{font-size:.75em;line-height:1.333em;}
+/* In Firefox (All versions) there is an inconsistant bug with relative font size in tables, this line fixes that. */
+table{font-size:1em}
+
+/* Main Layout: */
+
+/**
+ * Page width: Fixed width layout.
+ * For fixed width Layout comment the "Fluid width" line and uncomment the following line
+ */
+
+
+#page{width:960px;margin:0 auto;position:relative; text-align:left}
+
+
+/**
+ * Page width: Fluid width layout
+ * Notes:
+ * - As a thumb rule I don't deal with non-standard IE hacks so this design degrades to a fixed width in IE6
+ * - For fluid width in IE6 you can use the "width:expression()" hack. But you really shouldn't.
+ * - To have a full page width in IE6, use the following structure:
+ */
+
+/*
+#page{min-width:760px;max-width:1220px;height:1%;margin:0 auto;}
+*/
+/*
+#page{min-width:760px;max-width:1220px;width:auto !important;width:980px;margin:0 auto;}
+*/
+/**
+ * Sidebars widths
+ * NOTES:
+ * - When using this method, the design 'suffers' from the 3 pixel gap in IE6, 
+ *   meaning that in IE6 there will be an extra margin of 3 pixels from both
+ *   sides of "#content".
+ *   There are several ways to deal with it, 
+ *   I added a decleration in ie6.css, do not forget to change it there if you change the values here.
+ *   
+ *   TODO: find a consistent way to do it without the padding.  
+ */
+#sidebar-first{float:left;width:220px; padding:40px 20px 60px 0}/*LTR*/ 
+#sidebar-second{float:right;width:220px; padding:40px 0 60px 20px}/*LTR*/ 
+
+.with-sidebar-first #content{margin-left:250px;padding-left:10px; text-align:left}/*LTR*//*IE6*/
+.with-sidebar-second #content{margin-right:250px;padding-right:10px; text-align:left}/*LTR*//*IE6*/
+
+
+/** 
+ * Most likely you have no reason to change the following lines, but read the comments to be sure.      
+ */
+
+
+/**
+ * Set hasLayout for IE and clear floats on all main areas
+ * What is "hasLayout"? Read here: http://www.satzansatz.de/cssd/onhavinglayout.html
+ */
+#header, 
+#main-nav,
+#before-content,
+#after-content,
+#content-header,
+#content-top,
+#content-area,
+#content-bottom,
+#main,
+#footer{/*width:100%;*/}
+
+/**
+ * The following must not have a width in Tendu. Using height instead. 
+ * Note:
+ * - If for any reason you are going to set a fixed height on one of these elements' container it
+ *   will set the elemen's visual height to 1% (at least in IE) and you'll have to use a different approach.
+ */
+#header-content,
+#default-content,
+#content{height:1%;}
+/* Collapsed fieldsets use JS that requires it's parent to have layout in IE */
+.node-form{height:1%;}
+
+/**
+ * hasLayout clears floats for IE.
+ * for standatd browsers we use the "selector:after{content:value}" technique (http://www.positioniseverything.net/easyclearing.html)
+ */
+#header:after, 
+#header-content:after,
+#main-nav:after,
+#before-content:after,
+#after-content:after,
+#main:after,
+#content:after,
+#default-content:after,
+#footer:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/*We cannot use "clear:both" on these elements (It breaks the layout) so we use overflow:hidden instead.*/
+#content-header,
+#content-top,
+#content-area,
+#content-bottom{overflow:hidden;}
+
+/**
+ * Accesibility:
+ */
+
+/* Style accessibility links (If enabled in "Theme Settings")
+ * The accessibility links lets users with screen readers and keyboard-only users to skip certain areas
+ * of the page so they won't have to go through all the menus and non-content areas on every page they browse.
+ */
+/* Hide the links in regular browsers, (Had to do it this complicated way because Safari focus works weird.) */
+.accessibility-link{background:none;font-weight:bold;display:block;overflow:hidden;position:absolute;z-index:1;left:12px;white-space:nowrap;height:1px;margin-top:-1px}/*LTR*/
+.accessibility-anchor{display:block;overflow:hidden;height:1px;margin-top:-1px}
+/* Show the links when navigating with the keyboard. (Note: IE does not support :focus)*/
+.accessibility-link:focus{background:#fff;height:auto;margin:0;}
+/* Hide titles from Language switcher, Primary links and Secondary links for CSS enabled browsers */
+#language-switcher h2,
+h2.primary-links-title,
+h2.secondary-links-title{overflow:hidden;height:1px;margin-top:-1px;}
+
+/*End of Tendu styles*/
+
+img, a img {border:0}
+h1 {margin-bottom:16px; border-bottom:8px solid #b5111a;}
+h1, h2, h3 {display:block}
+h1 {font-size:40px; line-height:42px; color:#b5111a}
+h2 {font-size:28px; line-height:30px; word-spacing:-2px}
+	h2 a {color:#171f26; text-decoration:none}
+.sidebar-region h2 {font-size:24px; line-height:26px; border-top:4px solid #171f26; padding-top:4px}
+.sidebar-region .block {margin-bottom:20px}
+p {margin-bottom:1em}
+
+body {text-align:center; background:#030303 url('images/bg2.jpg') 50% 0 repeat-x;
+	color:#5b6166; margin-left:-1px}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+	font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;}
+#header {width:960px; background:#fff url('images/hdbg.jpg') 50% 0 no-repeat;}
+	#site-details {width:748px; float:left}
+	#header-blocks {float:right; width:172px}
+#page {margin:auto; width:960px; text-align:left; background:#fff;}
+#main {text-align:left; padding-left:20px; padding-right:20px; background:#fff url('images/hdbg.jpg') 50% -362px no-repeat;}
+#content {text-align:left}
+#content-area {padding:20px 0 40px 0; text-align:left}
+#content-header {padding-top:30px}
+
+.views-field-field-team-logo-fid img, .field-field-team-logo img, .field-field-portrait img {float:left}
+
+.imagefield-field_team_logo, .views-field-body, .field-field-portrait img {margin-right:20px; margin-bottom:30px}
+.terms {display:none}
+
+.submitted {margin-top:-12px; margin-bottom:16px; color:#bbb; font-style:italic; font-family:Georgia, "Times New Roman", Times, serif}
+.node {margin-bottom:3em; padding-bottom:2em; background:url(images/dot.gif) 0 bottom repeat-x}
+
+#footer p {height:50px; margin:0; padding:50px 0 0 220px; background:url('../images/ft-rek.gif') right 14px no-repeat; color:#030303; font-size:12px}
+#footer a:link {color:#b0afb0}
+
+#header-blocks {padding:20px; color:#fff; font-size:20px}
+	#header-blocks .form-text, #header-blocks .input  {width:100%}
+	#header-blocks .block {margin-bottom:20px}
+
+
+a {color:#b5111a; text-decoration:underline}
+a:visited {color:#930d14; text-decoration:underline}
+a:hover {text-decoration:none}
+a:active {}
+
+/*------------------navigation------------------*/
+#nav {width:960px; height:32px; display:block; clear:both; padding-top:10px}
+#nav div {height:32px; float:left; margin:0 5px}
+/*#nav div a???*/#n1 a, #n2 a, #n3 a, #n4 a, #n5 a, #n6 a, #n7 a, #n8 a, #n9 a, #n10 a {display:block; height:32px}
+#n1 a:hover, #n2 a:hover, #n3 a:hover, #n4 a:hover, #n5 a:hover, #n6 a:hover, #n7 a:hover, #n8 a:hover, #n9 a:hover, #n10 a:hover {background:none}
+#n1 {width:60px}
+#n2 {width:69px}
+#n3 {width:108px}
+#n4 {width:68px}
+#n5 {width:127px}
+#n6 {width:67px}
+#n7 {width:95px}
+#n8 {width:97px}
+#n9 {width:90px}
+#n10 {width:79px}
+#n1 {background:url('images/n1.gif') 0 -32px no-repeat} /* hidden */
+#n2 {background:url('images/n2.gif') 0 -32px no-repeat} /* -1px hides left border */
+#n3 {background:url('images/n3.gif') 0 -32px no-repeat}
+#n4 {background:url('images/n4.gif') 0 -32px no-repeat}
+#n5 {background:url('images/n5.gif') 0 -32px no-repeat}
+#n6 {background:url('images/n6.gif') 0 -32px no-repeat}
+#n7 {background:url('images/n7.gif') 0 -32px no-repeat}
+#n8 {background:url('images/n8.gif') 0 -32px no-repeat}
+#n9 {background:url('images/n9.gif') 0 -32px no-repeat}
+#n10 {background:url('images/n10.gif') 0 -32px no-repeat}
+#n1 a {background:url('images/n1.gif') 0 0 no-repeat} /* hidden */
+#n2 a {background:url('images/n2.gif') 0 0 no-repeat} /* -1px hides left border */
+#n3 a {background:url('images/n3.gif') 0 0 no-repeat}
+#n4 a {background:url('images/n4.gif') 0 0 no-repeat}
+#n5 a {background:url('images/n5.gif') 0 0 no-repeat}
+#n6 a {background:url('images/n6.gif') 0 0 no-repeat}
+#n7 a {background:url('images/n7.gif') 0 0 no-repeat}
+#n8 a {background:url('images/n8.gif') 0 0 no-repeat}
+#n9 a {background:url('images/n9.gif') 0 0 no-repeat}
+#n10 a {background:url('images/n10.gif') 0 0 no-repeat}

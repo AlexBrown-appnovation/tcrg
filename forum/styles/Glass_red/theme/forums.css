@@ -1,0 +1,141 @@
+/**
+*
+*	Specific styling for forum and topics listing.
+*/
+.forumbg, .forabg {
+	border: solid 1px;
+	margin: 5px 0 10px 0;
+	clear: both;
+}
+/**
+* General layout
+*/
+.topiclist {
+	list-style: none;
+	font-size: 1.2em;
+}
+dl.icon {
+	height: 1%;
+	overflow: hidden;
+	clear: both;
+	min-height: 35px;
+}
+.topiclist dt {
+	float: left;
+	width: 50%;
+}
+dd.views, dd.topics, dd.posts {
+	float: left;
+	width: 9%;
+	text-align: center;
+}
+dd.lastpost {
+	float: left;
+	width: 30%;
+}
+/**
+* Header specific layout
+*/
+li.header {
+	background: repeat-x;
+}
+li.header, li.row {
+	padding: 5px;
+}
+li.header a, li.header a:visited {
+	color: #fff;
+}
+li.header a:hover {
+	text-decoration: none;
+}
+li.header dt {
+	font-weight: bold;
+	/* align topics above the numbers */
+	margin-left: 0px;
+	margin-right: 0px;
+}
+li.header dl.icon {
+	min-height: 15px;
+}
+/**
+* Forum and topic specific styling.
+*/
+dd.topics dfn, dd.views dfn, dd.posts dfn, dd.lastpost dfn {
+	display: none;
+}
+.row {
+	border-top: solid 1px;
+}
+.row:first-child {
+	border-top: none;
+}
+a.forumtitle {
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", arial, verdana;
+}
+a.topictitle {
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", arial, verdana;
+}
+.row dt {
+	padding: 0 0 0 30px;
+	margin: 0 -30px 0 0;
+	/* position topic icon */
+	background-position: 5px 12px;
+}
+.topics .row dt {
+	padding: 0 0 0 25px;
+	margin: 0 -25px 0 0;
+}
+/* move the icon for the topics a bit, as it is smaller and adjust the header */
+.topics dl.icon {
+	background-position: 0 5px;
+}
+.forumbg li.header dt {
+	font-weight: bold;
+}
+/**
+* Subforum style
+*/
+ul.topiclist li.row dt a.subforum {
+	padding-left: 10px;
+	background: none no-repeat 0 3px transparent;
+}
+ul.topiclist li.row dt a.subforum.read {
+	background-image: url("{IMG_SUBFORUM_READ_SRC}");
+}
+
+ul.topiclist li.row dt a.subforum.unread {
+	background-image: url("{IMG_SUBFORUM_UNREAD_SRC}");
+}
+/**
+* Style of the forum rules
+*/
+.rules {
+	border: solid 1px;
+	font-size: 1.2em;
+	background: repeat-x;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.rules ol, .rules ul {
+	margin: 5px 0 5px 30px;
+}
+.rules strong {
+	display: block;
+}
+/**
+* Forum images
+*/
+.forum-image {
+	float: left;
+}
+
+/**
+* Feed image
+*/
+.feed-icon-forum {
+	float: right;
+}

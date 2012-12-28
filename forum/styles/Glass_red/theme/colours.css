@@ -1,0 +1,132 @@
+/**
+*
+*	All the themes color defines.
+*	For easier creation of color variations
+*
+*	All black and white declarations not included.
+*/
+
+/**
+* Border color declarations
+*/
+#wrap, hr, .navbar, .pagination span strong, .column1 h3, .column2 h3, .post,
+blockquote, .codebox, .inline-attachment .thumbnail img, .attachbox .thumbnail img,
+.inline-attachment .file, .attachbox .file, #postingbox, .content dl.faq,
+#options-panel, #attach-panel, #poll-panel, #topicreview, .section-posting .panel.bg2 fieldset.fields2,
+.section-posting .panel.bg2 h3, #tabs a, .section-ucp .panel.bg3, .section-mcp .panel.bg3, #navigation a,
+.cplist, #cp-main li.header, #cp-main .postbody .content, #minitabs a, #cp-main #display-panel,
+#cp-main #split-panel, #cp-main #merge-panel, .inputbox, select, .button1, .button2, .forumbg, .forabg,
+.rules, fieldset.polls dl, .pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5, #qr_editor_div {
+	border-color: #ff0000;
+}
+.pagination span a, .pagination span strong, .postprofile, .post .author, #cp-main h2, .row {
+	border-color: #cc0000;
+}
+
+/**
+* Font color declarations
+*/
+a {
+	color: #ff0000;
+}
+a:visited {
+	color: #CC0000;
+}
+a:hover {
+	color: #fff;
+}
+/**
+* Background color declarations
+*/
+.pagination span a, .pagination span strong, .button1, .button2 { background-color: #cc0000; }
+table, .pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 { background-color: #ff0000; }
+#tabs a, #navigation a, #minitabs a { background-color: #dd0000; }
+#tabs .activetab a, #minitabs .activetab a { background-color: #bb0000; }
+#tabs a:hover, #navigation a:hover, #minitabs a:hover { background-color: #880000; }
+
+.pm_foe_colour { border-left-color: #cc0000 !important; }
+.pm_friend_colour { border-left-color: #00cc00 !important; }
+.pm_marked_colour { border-left-color: #00cccc !important; }
+.pm_replied_colour { border-left-color: #909090 !important; }
+
+li.row.reported, .post .rules, #message.rules { background: #0f0000; }
+
+/**
+* Specifics for the code box
+*/
+.codebox dd {
+	color: #00cc00;
+}
+.syntaxbg		{ color: #ffffff; }
+.syntaxcomment	{ color: #555555; }
+.syntaxdefault	{ color: #00cc00; }
+.syntaxhtml		{ color: #00ff99; }
+.syntaxkeyword	{ color: #00cc00; }
+.syntaxstring	{ color: #00ffff; }
+
+/**
+* Image declarations
+*/
+
+/* Big button images */
+.reply-icon span	{ background-image: url("{IMG_BUTTON_TOPIC_REPLY_SRC}"); }
+.post-icon span		{ background-image: url("{IMG_BUTTON_TOPIC_NEW_SRC}"); }
+.locked-icon span	{ background-image: url("{IMG_BUTTON_TOPIC_LOCKED_SRC}"); }
+.pmreply-icon span	{ background-image: url("{IMG_BUTTON_PM_REPLY_SRC}") ;}
+.newpm-icon span 	{ background-image: url("{IMG_BUTTON_PM_NEW_SRC}") ;}
+.forwardpm-icon span	{ background-image: url("{IMG_BUTTON_PM_FORWARD_SRC}") ;}
+
+/* Topic action icons */
+a.print		{ background-image: url("{T_THEME_PATH}/images/icon_print.gif"); }
+a.sendemail	{ background-image: url("{T_THEME_PATH}/images/icon_email_topic.gif"); }
+a.fontsize	{ background-image: url("{T_THEME_PATH}/images/icon_fontsize.gif"); }
+
+/* Navbar icons */
+.sitehome						{ background-image: url("{T_THEME_PATH}/images/icon_home.gif"); }
+.icon-faq						{ background-image: url("{T_THEME_PATH}/images/red/icon_faq.gif"); }
+.icon-members					{ background-image: url("{T_THEME_PATH}/images/red/icon_members.gif"); }
+.icon-home						{ background-image: url("{T_THEME_PATH}/images/icon_home.gif"); }
+.icon-ucp						{ background-image: url("{T_THEME_PATH}/images/red/icon_ucp.gif"); }
+.icon-register					{ background-image: url("{T_THEME_PATH}/images/red/icon_register.gif"); }
+.icon-logout					{ background-image: url("{T_THEME_PATH}/images/red/icon_loginout.gif"); }
+.icon-bookmark					{ background-image: url("{T_THEME_PATH}/images/icon_bookmark.gif"); }
+.icon-bump						{ background-image: url("{T_THEME_PATH}/images/icon_bump.gif"); }
+.icon-subscribe					{ background-image: url("{T_THEME_PATH}/images/icon_subscribe.gif"); }
+.icon-unsubscribe				{ background-image: url("{T_THEME_PATH}/images/icon_unsubscribe.gif"); }
+.icon-pages						{ background-image: url("{T_THEME_PATH}/images/red/icon_pages.gif"); }
+.icon-search					{ background-image: url("{T_THEME_PATH}/images/icon_search.gif"); }
+
+/* Profile & navigation icons */
+.email-icon, .email-icon a		{ background-image: url("{IMG_ICON_CONTACT_EMAIL_SRC}"); }
+.aim-icon, .aim-icon a			{ background-image: url("{IMG_ICON_CONTACT_AIM_SRC}"); }
+.yahoo-icon, .yahoo-icon a		{ background-image: url("{IMG_ICON_CONTACT_YAHOO_SRC}"); }
+.web-icon, .web-icon a			{ background-image: url("{IMG_ICON_CONTACT_WWW_SRC}"); }
+.msnm-icon, .msnm-icon a			{ background-image: url("{IMG_ICON_CONTACT_MSNM_SRC}"); }
+.icq-icon, .icq-icon a			{ background-image: url("{IMG_ICON_CONTACT_ICQ_SRC}"); }
+.jabber-icon, .jabber-icon a		{ background-image: url("{IMG_ICON_CONTACT_JABBER_SRC}"); }
+.pm-icon, .pm-icon a				{ background-image: url("{IMG_ICON_CONTACT_PM_SRC}"); }
+.quote-icon, .quote-icon a		{ background-image: url("{IMG_ICON_POST_QUOTE_SRC}"); }
+
+/* Moderator icons */
+.report-icon, .report-icon a		{ background-image: url("{IMG_ICON_POST_REPORT_SRC}"); }
+.edit-icon, .edit-icon a			{ background-image: url("{IMG_ICON_POST_EDIT_SRC}"); }
+.delete-icon, .delete-icon a		{ background-image: url("{IMG_ICON_POST_DELETE_SRC}"); }
+.info-icon, .info-icon a			{ background-image: url("{IMG_ICON_POST_INFO_SRC}"); }
+.warn-icon, .warn-icon a			{ background-image: url("{IMG_ICON_USER_WARN_SRC}"); }
+
+.headerbar { background-image: url("{T_THEME_PATH}/images/red/cellpic_body.gif"); }
+
+.navlinks, #page-footer .navbar, .copyright, .post, blockquote, .codebox dt, .inline-attachment .file, .attachbox .file,
+.content dl.faq dt, #postingbox h3, .section-posting .panel.bg2 h3, th, li.header, .rules, #qr_editor_div { background-image: url("{T_THEME_PATH}/images/red/cellpic1.gif"); }
+
+.pagination span a, .pagination span strong { background-image: url("{T_THEME_PATH}/images/red/cellpic4.gif"); }
+
+.topiclist .pagination { background-image: url("{T_THEME_PATH}/images/red/icon_pagination.gif"); }
+
+.back2top a { background-image: url("{T_THEME_PATH}/images/red/arrow_up.gif"); }
+
+.top2 { background-image: url("{T_THEME_PATH}/images/red/top.gif"); }
+
+#tabs a, #navigation a, #minitabs a, .button1, .button2 { background-image: url("{T_THEME_PATH}/images/red/cellpic3.gif"); }
+
+.pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 { background-image: url("{T_THEME_PATH}/images/red/cellpic2.gif"); }

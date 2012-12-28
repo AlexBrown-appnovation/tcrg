@@ -1,0 +1,324 @@
+/**
+*
+*	General styles
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+/* General board style: */
+body {
+	background: #000;
+	color: #fff;
+	font-family: verdana, sans-serif, arial;
+	font-size: 10px;
+	padding: 10px;
+}
+/* Give wrap a nice basis. */
+#wrap {
+	border: solid 1px;
+	margin: 0 auto;
+	min-width: 650px;
+	/*
+		If you prefer a maximum width for the forum:
+		- Uncomment the line below and replace ### with your desired maximum-width.
+	
+	max-width: ###px;
+		
+		if you prefer a fixed with for the forum:
+		- Remove the min-width: 650px; line
+		- Uncomment the line below and replace ### with your desired width:
+	
+	width: ###px;
+	
+	*/	
+}
+
+/**
+* Styling of several objects
+*/
+
+/* verdana is not such a nice font for larger objects... */
+h1, h2, h3, h4 {
+	font-family: "Trebuchet MS", arial, verdana;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+h3, h4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 0 5px 0;
+	clear: both;
+}
+/* give paragraphs a default size, since they are also included in more difficult to reach spots */
+p {
+	font-size: 1.2em;
+	padding-bottom: 5px;
+}
+/* remove border around images. */
+img {
+	border: 0;
+}
+/**
+* Give urls a general style.
+*/
+a {
+	text-decoration: underline;
+}
+a.username-coloured:hover {
+	text-decoration: none;
+}
+hr {
+	border: 0 none;
+	border-top: 1px solid;
+	height: 1px;
+	margin: 5px 0;
+	display: block;
+	clear: both;
+}
+/**
+* Styling of the header
+*/
+.headerbar {
+	background: repeat-x;
+	padding: 9px 10px;
+	height: 80px;
+}
+#logo {
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+h1 {
+	padding: 10px 0 0 0;
+}
+/* hide the "Skip to content" link. */
+.skiplink {
+	display: none;
+}
+/**
+* Main search box
+*/
+
+#search-box fieldset {
+	float: right;
+	position: relative;
+	top: -50px;
+	font-size: 1.2em;
+}
+#search-box a {
+	color: #fff;
+}
+#search-box a:hover {
+	text-decoration: none;
+}
+#search-box input.inputbox.search {
+	width: auto;
+}
+/**
+* Topic search boxes
+*/
+.search-box {
+	float: left;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+.search-box .inputbox {
+	max-width: 200px;
+}
+/**
+* Main navigation style
+*/
+
+.linklist {
+	height: 1%;
+	overflow: hidden;
+	list-style: none;
+	font-size: 1.2em;
+}
+.linklist li {
+	float: left;
+}
+.leftside, .left, .left-box {
+	float: left;
+}
+.rightside, .right, .right-box {
+	float: right !important;
+}
+a.left {
+	background: url("{T_THEME_PATH}/images/arrow_left.gif") no-repeat 0 50%;
+	padding-left: 9px;
+	margin-left: 3px;
+}
+a.left:hover {
+	padding-left: 12px;
+	margin-left: 0;
+}
+a.right {
+	background: url("{T_THEME_PATH}/images/arrow_right.gif") no-repeat 100% 50%;
+	padding-right: 9px;
+	margin-right: 3px;
+}
+a.right:hover {
+	padding-right: 12px;
+	margin-right: 0;
+}
+p .left {
+	clear: left;
+}
+p .right {
+	clear: right;
+}
+/**
+* Additional navbar style
+*/
+.navbar {
+	height: 1%;
+	overflow: hidden;
+	border: solid 1px;
+	margin: 10px 10px 0 10px;
+	clear: both;
+}
+.navlinks, #page-footer .navbar {
+	background: repeat-x;
+	padding: 0px;
+}
+.navbar .linklist {
+	padding: 0 5px 5px 0;
+}
+.navlinks.linklist li, #page-footer .linklist li {
+	margin: 3px 5px 0 0;
+}
+.navlinks a, #page-footer .navbar a, .navlinks a:visited, #page-footer .navbar a:visited {
+	color: #fff;
+}
+.navlinks a {
+	font-weight: bold;
+}
+.navlinks a:hover, #page-footer .navbar a:hover {
+	text-decoration: none;
+}
+#page-footer .navbar {
+	margin-bottom: 10px;
+}
+/**
+* Styling of the page body
+*/
+#page-body {
+	padding: 10px;
+}
+/* clear all corner bottoms. */
+.corners-bottom {
+	display: block;
+	height: 1px;
+	clear: both;
+}
+/* details list style */
+.details {
+	height: 1%;
+	overflow: hidden;
+	font-size: 1.2em;
+}
+.details dt {
+	float: left;
+	width: 10em;
+	clear: both;
+}
+.details dd {
+	margin: 0 0 10px 11em;
+}
+/**
+* Pagination styling
+*/
+.pagination {
+	float: right;
+	font-size: 1.2em;
+	margin: 0 0 5px 0;
+	height: 1%;
+	overflow: hidden;
+	height: auto !important;
+}
+/* remove the , */
+.page-sep {
+	display: none; 
+}
+.pagination span a, .pagination span strong {
+	border: solid 1px;
+	background: 0 -44px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 2px;
+	margin-left: 2px;
+	line-height: 1.6em;
+}
+.pagination span a:hover {
+	background-position: 0 0;
+}
+.pagination span strong {
+	background-position: 0 0;
+}
+/* modify the inline pagination */
+.topiclist .pagination {
+	font-size: 1em;
+	background: no-repeat 0 50%;
+	padding-left: 15px;
+}
+.topiclist .pagination a {
+	font-weight: normal;
+}
+/**
+* Columns
+*/
+.column1 {
+	width: 49%;
+	float: left;
+}
+.column2 {
+	width: 49%;
+	float: right;
+}
+.column1 h3, .column2 h3 {
+	border-bottom: solid 1px;
+	margin-bottom: 5px;
+	padding-bottom: 0;
+}
+/**
+* Page footer style
+*/
+.copyright {
+	text-align: center;
+	background: repeat-x;
+	font-size: 1.1em;
+	padding: 5px;
+}
+.copyright a, .copyright a:visited {
+	color: #fff;
+}
+.copyright a:hover {
+	text-decoration: none;
+}
+.copyright strong {
+	float: left;
+	margin: 10px 0;
+}
+
+/* clearfix */
+.clearfix {
+	clear: both;
+}

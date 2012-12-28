@@ -1,0 +1,306 @@
+/**
+*
+*	User control panel and Moderation control panel specific styles
+*/
+
+/**
+* Navigation tabs
+* Define basic layout
+*/
+
+#tabs {
+	height: 1%;
+	overflow: hidden;
+}
+#tabs ul {
+	list-style: none;
+}
+#tabs li {
+	display: inline;
+}
+/* style tab buttons */
+#tabs a {
+	display: block;
+	float: left;
+	font-size: 1.3em;
+	text-decoration: none;
+	color: #fff;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+	margin: 0 5px 0 0;
+	padding: 4px 6px 3px 6px;
+	background: repeat-x 0 -50px;
+	font-family: "Trebuchet MS", arial, verdana;
+	background-position: 0 -50px;
+}
+#tabs .activetab a {
+	background-position: 0 0;
+	font-weight: bold;
+}
+#tabs a:hover {
+	background-position: 0 -25px;
+}
+
+/**
+* Basic CP Layout
+*/
+.section-ucp .panel.bg3, .section-mcp .panel.bg3 {
+	border: solid 1px;
+	padding: 5px;
+	height: 1%;
+	overflow: hidden;
+}
+/* divide menu and content */
+#cp-menu {
+	float: left;
+	width: 15%;
+}
+#cp-main {
+	float: right;
+	width: 84%;
+}
+/**
+* Style the submenu
+*/
+#navigation ul {
+	list-style: none;
+	font-size: 1.2em;
+}
+#navigation a {
+	display: block;
+	border: solid 1px;
+	color: #fff;
+	background-position: 0 -50px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	padding: 5px;
+}
+#active-subsection a {
+	font-weight: bold;
+	background-position: 0 0;
+}
+#navigation a:hover {
+	background-position: 0 -25px;
+}
+.cp-mini .mini dt {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.cp-mini .mini dd {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+.cp-mini .mini dd input.button2 {
+	padding: 1px;
+	font-size: 0.9em;
+}
+.cp-mini .mini dd.friend-offline {
+	font-style: italic;
+}
+/**
+* #cp-main elements.
+*/
+
+/* header */
+#cp-main h2 {
+	border-bottom: solid 1px;
+}
+/* topic list */
+
+.cplist {
+	border: solid 1px;
+	margin-bottom: 10px;
+}
+dd.extra, dd.option {
+	float: left;
+	width: 9%;
+	text-align: center;
+}
+dd.option {
+	text-align: left;
+}
+dd.time {
+	float: left;
+	width: 19%;
+}
+dd.mark {
+	width: 5%;
+	float: right;
+	text-align: center;
+}
+dd.info {
+	float: left;
+	width: 29%;
+}
+#cp-main .topiclist dt {
+	float: left;
+}
+#cp-main .topiclist dl {
+	height: 1%;
+	overflow: hidden;
+}
+#cp-main li.header dt {
+	left: 0;
+	padding: 0;
+	display: inline;
+}
+#cp-main li.header {
+	margin: 10px 0 -1px 0; /* add 10px top padding, so the pm header does not look wrong in IE7.. */
+	border: solid;
+	border-width: 1px 1px 0 1px;
+}
+#cp-main dl.icon {
+	/* There is no explicit .topics or .forums, .forabg or .forumsbg class do differentiate,
+		so we will use setting below so it will look the best for both icon types of topics and forums */
+	background-position: 0 50%;
+}
+#cp-main fieldset div label {
+	font-size: 1.2em;
+}
+#cp-main fieldset div {
+	padding-bottom: 3px;
+}
+#cp-main fieldset.display-actions div label {
+	font-size: 1em !important;
+}
+/**
+* private message posting box
+*/
+#cp-main #postingbox {
+	border: none;
+}
+#cp-main #postingbox fieldset {
+	padding: 0;
+}
+#cp-main #postingbox dt textarea {
+	width: 12em;
+	height: 75px;
+}
+#cp-main #options-panel {
+	border: none;
+	padding: 0;
+}
+#options-panel fieldset div {
+	font-size: 1em;
+	margin-bottom: 3px;
+}
+#cp-main .topiclist {
+	clear: both;
+}
+/* private message rules list */
+#cp-main ol.def-rules {
+	padding: 0 0 0 20px;
+	font-size: 1.2em;
+}
+#cp-main ol.def-rules .button2 {
+	font-size: 0.9em;
+	margin-bottom: 2px;
+}
+/**
+* private message colors
+*/
+.cp-mini .mini dd.pm-legend {
+	border-left: solid 5px;
+	padding: 0 0 0 3px;
+	margin: 0 0 3px 0;
+	line-height: 1em;
+}
+.pm_marked_colour, .pm_foe_colour, .pm_friend_colour, .pm_replied_colour {
+	border-left: solid 5px;
+}
+/**
+* Specifics for the moderator control panel
+*/
+#cp-main .table1 .name {
+	width: 17%;
+}
+#cp-main .table1 td {
+	padding: 5px;
+}
+dd.moderation {
+	float: left;
+	width: 20%;
+}
+#cp-main .postbody {
+	width: 100%;
+	float: none;
+}
+/* make sure this does not apply for PM's. */
+#cp-main .pm-panel-message .postbody {
+	width: 74%;
+	float: left;
+}
+#cp-main .postbody .rules {
+	background: none;
+	border: none;
+	padding: 0;
+}
+#cp-main .post .postbody h3 {
+	clear: none;
+	padding: 0;
+	/* move the element in the fancy top bar */
+	position: relative;
+	top: -30px;
+	/* force content below to go up */
+	height: 0;
+}
+#cp-main .postbody h3 {
+	clear: none;
+	padding: 0;
+	/* move the element in the fancy top bar */
+	position: normal;
+	top: 0;
+	/* force content below to go up */
+	height: auto;
+}
+#cp-main .post .postbody .content {
+	/* to make sure this online applies to the post not in the topic review */
+	border-bottom: none !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+#cp-main .postbody .content {
+	border-bottom: solid 1px;
+	margin-bottom: 5px;
+	padding-bottom: 4px;
+}
+
+/**
+* Mini tabs
+*/
+#minitabs ul {
+	list-style: none;
+}
+#minitabs li {
+	display: inline;
+}
+#minitabs a {
+	display: block;
+	float: left;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #fff;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+	margin: 0 5px 0 0;
+	padding: 4px 6px 3px 6px;
+	background: repeat-x 0 -50px;
+	font-family: "Trebuchet MS", arial, verdana;
+	background-position: 0 -50px;
+}
+#minitabs .activetab a {
+	background-position: 0 0;
+}
+#minitabs a:hover {
+	background-position: 0 -25px;
+}
+
+#cp-main #display-panel, #cp-main #split-panel, #cp-main #merge-panel {
+	clear: both;
+	border: solid 1px;
+	padding: 5px;
+}
+
+#cp-main .left-box {
+	margin-bottom: 5px;
+}

@@ -1,0 +1,449 @@
+/**
+*
+*	Styling of general content elements
+*/
+
+h2 a, h2 a:visited {
+	color: #fff;
+}
+h2 a:hover {
+	text-decoration: none;
+}
+/**
+* Basic post style
+*/
+.post {
+	clear: both;
+	height: 1%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border: solid 1px;
+	padding: 30px 5px 5px 5px;
+	background: repeat-x;
+	height: auto !important;
+}
+/* Focus content to the left */
+.postbody {
+	width: 74%;
+	float: left;
+	height: 1%;
+	height: auto !important;
+}
+.postprofile {
+	float: right;
+	width: 24%;
+	padding-left: 1%;
+	border-left: solid 1px;
+	height: 1%;
+	overflow: hidden;
+	height: auto !important;
+}
+/**
+	If you prefer to have the profile on the left hand side, remove both the .postbody and .postprofile declarations
+	And then uncomment the declarations below.
+
+.postbody {
+	width: 74%;
+	float: right;
+}
+.postprofile {
+	float: left;
+	width: 24%;
+	padding-right: 1%;
+	border-right: solid 1px;
+}
+.online .postprofile {
+	background-position: 99% 0 !important;
+}
+*/
+/* remove divider */
+hr.divider {
+	display: none;
+}
+.post h3 {
+	clear: none;
+	margin: 0;
+	padding: 0;
+	height: 1px;
+	position: relative;
+	top: -27px;
+}
+.post h3 a, .post h3 a:visited {
+	color: #fff;
+}
+.post h3 a:hover {
+	text-decoration: none;
+}
+/* create a little distance from the author image. */
+.post .author img {
+	margin-right: 4px;
+}
+.post .author {
+	border-bottom: solid 1px;
+	margin-bottom: 5px;
+}
+/*
+* Post content styles
+*/
+.content {
+	/* put focus on content so increase font-size a bit. */
+	font-size: 1.3em;
+	clear: both;
+}
+/* list styles */
+.content ol, .content ul {
+	margin: 5px 0 5px 30px;
+}
+/* do signatures */
+.signature {
+	border-top: dashed 1px;
+	margin-top: 10px;
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+/* blockquotes */
+blockquote {
+	border: solid 1px;
+	margin: 5px 20px;
+	padding: 5px 5px 5px 5px;
+	background: repeat-x;
+}
+blockquote.uncited {
+	padding-top: 30px;
+}
+blockquote cite {
+	display: block;
+	min-height: 20px;
+	margin-bottom: 5px;
+	font-style: normal;
+}
+/* code blocks */
+.codebox {
+	margin: 5px 20px;
+	border: solid 1px;
+}
+.codebox dt {
+	padding: 5px;
+	background: repeat-x;
+}
+.codebox dt a, .codebox dt a:visited {
+	color: #fff;
+}
+.codebox dt a:hover {
+	text-decoration: none;
+}
+.codebox dd {
+	padding: 5px;
+	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, mono;
+	overflow: auto;
+}
+
+/**
+* Inline attachment list styling
+*/
+.inline-attachment .thumbnail img, .attachbox .thumbnail img {
+	border: solid 1px;
+	padding: 1px;
+}
+.inline-attachment .thumbnail a:hover img, .attachbox .thumbnail a:hover img {
+	border-color: #fff;
+}
+.inline-attachment .thumbnail dd, .attachbox .thumbnail dd {
+	font-size: 0.9em;
+	font-style: italic;
+}
+.inline-attachment .file, .attachbox .file {
+	border: solid 1px;
+	background: repeat-x;
+	padding: 5px;
+}
+.inline-attachment .file dt, .attachbox .file dt, .inline-attachment .thumbnail dt {
+	min-height: 25px;
+	font-size: 1em;
+	margin: 0 !important;
+}
+.inline-attachment .file dt a, .inline-attachment .file dt a:visited, .attachbox .file dt a, .attachbox .file dt a:visited {
+	color: #fff;
+}
+.inline-attachment .file dt a:hover, .attachbox .file dt a:hover {
+	text-decoration: none;
+}
+.inline-attachment .file em, .attachbox .file em {
+	font-weight: bold;
+}
+.attachbox {
+	font-size: 1.2em;
+}
+.attachbox dt {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.attachbox dl {
+	margin-bottom: 10px;
+}
+/* edit notice */
+.post .notice {
+	border-top: dashed 1px #fff;
+	font-size: 1.1em;
+	padding: 3px 0;
+	margin: 15px 0 0 0;
+}
+/* reported topic notice */
+.post .rules {
+	background: none;
+	border-style: dashed;
+}
+.post .rules strong {
+	display: inline;
+	padding: 0;
+}
+.post .rules img {
+	vertical-align: middle;
+}
+/**
+* Post profile styling
+*/
+.postprofile dt {
+	/* we want to highlight the authoer name, so make it big. */
+	font-family: "Trebuchet MS", arial, verdana;
+	font-size: 1.8em;
+}
+.postprofile dd {
+	font-size: 1.2em;
+}
+.online .postprofile {
+	background: url("{T_IMAGESET_LANG_PATH}/icon_user_online.gif") no-repeat 100% 0;
+}
+/**
+* Back to top styling
+*/
+.back2top a {
+	display: block;
+	clear: both;
+	text-indent: -5000px;
+	width: 15px;
+	height: 15px;
+	background: no-repeat;
+	float: right;
+}
+.top2 {
+	padding-left: 15px;
+	background: no-repeat 0 3px;
+}
+/**
+* Frequently asked Questions styling
+*/
+#faqlinks .faq {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+#faqlinks .faq dt {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#faqlinks .faq dd {
+	/* create a little space in the listing */
+	line-height: 1.4em;
+}
+
+.content h2 {
+	/* a bit oversized, let's shrink it */
+	font-size: 1.8em;
+}
+.content dl.faq {
+	border: solid 1px;
+	margin-bottom: 10px;
+}
+.content dl.faq dt {
+	background: repeat-x;
+	padding: 5px;
+}
+.content dl.faq dd {
+	padding: 5px;
+}
+/* only remove this line on the faq page */
+.section-faq hr.dashed {
+	display: none;
+}
+
+/**
+* Posting boxes
+*/
+#postingbox {
+	border: solid 1px;
+}
+#postingbox h3 {
+	margin: 0;
+	padding: 2px 5px 5px 5px;
+	background: repeat-x;
+}
+#postingbox fieldset {
+	padding: 5px;
+}
+#format-buttons {
+	font-size: 1.2em;
+}
+#smiley-box {
+	float: right;
+	width: 20%;
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+#smiley-box strong {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+#message-box textarea {
+	width: 78%;
+	margin: 10px 0;
+	font-size: 1.3em;
+}
+#options-panel, #attach-panel, #poll-panel {
+	border: solid 1px;
+	padding: 5px;
+}
+#options-panel fieldset div {
+	font-size: 1.2em;
+	margin-bottom: 3px;
+}
+#topicreview .postbody {
+	width: 100%;
+	float: none;
+}
+#topicreview {
+	border: solid 1px;
+	overflow: auto;
+	max-height: 500px;
+	padding: 5px 5px 0 5px;
+}
+/* we only want to make the attachments have a border */
+.section-posting .panel.bg2 fieldset.fields2 {
+	border: solid 1px;
+	border-width: 0 1px 1px 1px;
+	padding: 5px;
+}
+.section-posting .panel.bg2 h3 {
+	border: solid 1px;
+	border-width: 1px 1px 0 1px;
+	background: repeat-x;
+	padding: 2px 5px 5px 5px;
+}
+.section-posting .panel.bg2 fieldset.fields2 .right {
+	float: none !important;
+}
+/**
+* Correction of font sizes for several .content things
+*/
+.content p {
+	font-size: 1em;
+}
+/**
+* Memberlist table
+*/
+table {
+	font-size: 1.2em;
+	width: 100%;
+}
+th {
+	background: repeat-x #000;
+	padding: 5px;
+}
+th a, th a:visited {
+	color: #fff;
+}
+th a:hover {
+	text-decoration: none;
+}
+.table1 td {
+	padding: 3px 5px;
+	background: #000;
+}
+.section-memberlist .forumbg, .section-viewonline .forumbg {
+	border: none;
+}
+table .name {
+	text-align: left;
+	width: 40%;
+}
+table .rank-img {
+	float: right;
+}
+table .posts {
+	text-align: center;
+	width: 5%;
+}
+table .info {
+	width: 20%;
+}
+table .joined {
+	width: 15%;
+}
+table .active {
+	width: 15%;
+}
+/**
+* Some additional styling for the memberlist
+*/
+#viewprofile .left-box {
+	margin: 0 40px 0 0;
+	font-size: 1.2em;
+}
+/**
+* fix confirmbody
+*/
+#confirm .content, #login .content {
+	font-size: 1em;
+}
+#login .content p {
+	font-size: 1.2em;
+}
+#confirm .submit-buttons {
+	text-align: center;
+}
+/**
+* Search results
+*/
+ul.searchresults {
+	clear: both;
+	padding: 5px;
+	list-style: none;
+	font-size: 1.2em;
+}
+.postprofile .author {
+	border-bottom: none;
+	font-size: 1.6em;
+}
+/**
+* Pollbars
+*/
+.pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 {
+	background: repeat-x 0 -20px;
+	border: solid 1px;
+	min-width: 1em;
+}
+fieldset.polls dl.voted dt {
+	font-weight: bold;
+}
+fieldset.polls dl {
+	border-top: solid 1px;
+	padding-top: 7px;
+}
+
+#postingbox table {
+	width: auto;
+}
+/* fix board notice */
+#message.rules strong {
+	display: inline;
+}
+#message.rules {
+	background: none;
+	border-style: dashed;
+}
+
+/* Fix return to search/search search-results display */
+.topic-actions {
+	clear: both;
+	padding-top: 5px;
+}

@@ -1,0 +1,34 @@
+/**
+*
+*	Tweaks to make things work in various browsers.. (IE6 specifically)
+*/
+table.table1 {
+	width: 99%;		/* IE < 6 browsers */
+	/* Tantek hack */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 100%;
+}
+html>body table.table1 { width: 100%; }	/* Reset 100% for opera */
+
+#navigation li {
+	*display: inline;
+}
+/* IE6
+Fixes the left border of the #wrap to be out of bound */
+* html .topic-actions {
+	width: 99%;
+	height: 25%:
+}
+/* IE6
+Fixes the first post, being displayed differently */
+* html .post {
+	height: 25%;
+	overflow: hidden;
+	width: 99%;
+}
+/* somehow the padding does not work for IE6, so apply it to the list items. */
+* .navlinks li,
+* #page-footer .navbar li {
+	padding-top: 3px;
+}

@@ -1,0 +1,180 @@
+/**
+*
+*	Form specific styles
+*/
+
+/**
+* Fieldset general style
+*/
+
+fieldset {
+	border: none;
+}
+
+/**
+* input general style
+*/
+.inputbox, select {
+	border: solid 1px;
+	font-size: 1.1em; /* make sure that font is relative to it's parents size. */
+	padding: 2px;
+	background: #000;
+	color: #fff;
+	font-family: "Trebuchet MS", arial, verdana;
+}
+
+input.inputbox	{ width: 85%; }
+input.medium	{ width: 50%; }
+input.narrow	{ width: 25%; }
+input.tiny		{ width: 125px; }
+input.autowidth { width: auto !important; }
+/**
+* General button style
+*/
+.button1, .button2 {
+	background: none repeat-x 0 -25px transparent;
+	color: #fff;
+	border: solid 1px;
+	padding: 2px;
+	font-size: 1em;
+	cursor: pointer;
+	text-decoration: none; /* remove line for links */
+	font-size: 1.1em;
+}
+.button1:hover, .button2:hover {
+	background-color: #000;
+	background-position: 0 0;
+}
+.button1 {
+	font-weight: bold;
+}
+/**
+* Form layouts
+*/
+fieldset dl {
+	height: 1%;
+	overflow: hidden;
+	clear: both;
+	font-size: 1.2em;
+}
+fieldset dt {
+	float: left;
+	width: 40%;
+	margin-bottom: 10px;
+}
+fieldset dd {
+	margin: 0 0 10px 41%;
+}
+fieldset dt label {
+	font-weight: bold;
+	cursor: pointer;
+}
+/* Fields 1 */
+fieldset.fields1 dt {
+	width: 15em;
+	border-right-width: 0;
+}
+
+fieldset.fields1 dd {
+	margin-left: 15em;
+	border-left-width: 0;
+}
+/* Fields 2 */
+fieldset.fields2 dt {
+	width: 15em;
+	border-right-width: 0;
+}
+
+fieldset.fields2 dd {
+	margin-left: 16em;
+	border-left-width: 0;
+}
+
+/**
+* Specific styles for various fieldsets.
+*/
+fieldset.submit-buttons {
+	margin: 5px 0;
+}
+fieldset.display-options {
+	text-align: center;
+}
+fieldset.quickmod {
+	text-align: right;
+	clear: both;
+	font-size: 1.2em;
+	margin: 5px 0;
+}
+#jumpbox {
+	text-align: right;
+	height: 1%;
+	overflow: hidden;
+	clear: right;
+}
+.topic-actions {
+	margin-bottom: 3px;
+	height: 28px;
+	min-height: 28px;
+}
+div[class].topic-actions {
+	height: auto;
+}
+/*
+.topic-actions {
+	clear: both;
+	padding-top: 5px;
+	height: 1%;
+	overflow: hidden;
+	height: auto !important;
+}*/
+.quick-login input.inputbox {
+	width: auto;
+}
+fieldset.display-actions {
+	text-align: right;
+}
+fieldset.forum-selection, fieldset.submit-buttons, fieldset.display-options,
+fieldset.quickmod, #jumpbox, fieldset.quick-login, fieldset.display-actions {
+	font-size: 1.2em;
+}
+
+/**
+* Poll Content
+*/
+/* reset the font size of the poll pox */
+fieldset.polls dl, fieldset.polls .button1 {
+	font-size: 1em;
+}
+fieldset.polls dt {
+	width: 15em;
+	border-right-width: 0;
+}
+
+fieldset.polls dd {
+	margin-left: 15em;
+	border-left-width: 0;
+}
+
+/**
+* Quick Reply
+*/
+#qr_showeditor_div .content, #qr_editor_div .content {
+	font-size: 1em;
+}
+#qr_editor_div {
+	border: solid 1px;
+	background: repeat-x;
+	padding: 2px 5px;
+}
+#qr_editor_div h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0;
+}
+#qr_editor_div a {
+	float: left;
+	font-size: 1.2em;
+}
+#qr_editor_div textarea {
+	width: 99%;
+}

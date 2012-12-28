@@ -1,0 +1,39 @@
+<!-- PHP -->
+global $config, $template, $user;
+$current_theme = $user->theme['theme_path'];	
+$easy_theme = $_GET['ntheme'];
+
+if(!isset($_COOKIE[$current_theme."-tstyle"])) {
+$color_variation = $config['default_after_scheme'];
+}
+
+if(!empty($easy_theme)) {
+	ob_start();
+	setcookie($current_theme."-tstyle", $easy_theme, time()+31536000); /* Expires in a year */
+	header("Location: ". $_SERVER['PHP_SELF']);
+	exit;
+	ob_end_flush();
+}
+
+if(isset($_COOKIE[$current_theme."-tstyle"])) {
+	$color_variation = $_COOKIE[$current_theme."-tstyle"];
+}
+
+
+$template->assign_vars(array(
+		'AFTER_STYLE'		=> $color_variation,
+)
+	);
+
+
+$delete_cookies = $_GET['delete_cookies'];
+if($delete_cookies == 'true') {
+
+ob_start();
+	setcookie($current_theme."-tstyle", "", time()-31536000);
+	header("Location: ". $_SERVER['PHP_SELF']);
+	exit;
+ob_end_flush();
+
+}
+<!-- ENDPHP -->

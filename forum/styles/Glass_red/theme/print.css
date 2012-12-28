@@ -1,0 +1,88 @@
+/**
+* Print stylesheet
+* Glass Style
+* DoubleJWeb.Net
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: verdana, arial, tahoma;
+	font-size: 10px;
+	padding: 10px;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Trebuchet MS", arial, sans-serif, verdana;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 1.4em;
+}
+p {
+	font-size: 1.3em;
+}
+hr {
+	border: 0 none;
+	border-top: 1px solid #000;
+	height: 1px;
+	margin: 5px 0 10px 0;
+	display: block;
+	clear: both;
+}
+#page-header p {
+	margin-bottom: 15px;
+}
+.page-number {
+	font-size: 1.2em;
+}
+.date {
+	font-size: 1.2em;
+	padding: 0 0 0 5px;
+	border-left: solid 5px #000;
+}
+.author {
+	font-size: 1.2em;
+	padding: 0 0 0 5px;
+	margin: 0 0 5px 0;
+	border-left: solid 5px #000;
+}
+.content {
+	font-size: 1.3em;
+}
+.content ol {
+	margin: 5px 0 5px 30px;
+}
+.content ul {
+	margin: 5px 0 5px 20px;
+}
+.codebox {
+	margin: 10px 20px;
+	border: solid 1px #000;
+	padding: 5px;
+}
+.codebox dd {
+	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, mono;
+}
+
+.syntaxbg		{ color: #ffffff; }
+.syntaxcomment	{ color: #006600; }
+.syntaxdefault	{ color: #484848; }
+.syntaxhtml		{ color: #00DDDD; }
+.syntaxkeyword	{ color: #0000DD; }
+.syntaxstring	{ color: #AAAA00; }
+
+.copyright {
+	font-size: 1.1em;
+	text-align: center;
+}

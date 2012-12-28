@@ -1,0 +1,232 @@
+/*
+	changes for RTL languages.
+*/
+
+
+/* common.css */
+.rtl #logo {
+	float: right;
+	margin: 0 0 0 30px;
+}
+
+.rtl #search-box fieldset {
+	float: left;
+}
+
+.rtl .search-box {
+	float: right;
+}
+
+.rtl .linklist li {
+	float: right;
+}
+.rtl .leftside, .rtl .left-box {
+	float: right;
+}
+.rtl .rightside, .rtl .right-box {
+	float: left !important;
+}
+
+.rtl p .left {
+	clear: right;
+}
+.rtl p .right {
+	clear: left;
+}
+
+.rtl .navbar .linklist {
+	padding: 0 5px 5px;
+}
+
+.rtl .navlinks.linklist li, .rtl #page-footer .linklist li {
+	margin: 3px 0 0 5px;
+}
+
+.rtl .details dt {
+	float: right;
+}
+
+.rtl .details dd {
+	margin: 0 11em 10px 0;
+}
+
+.rtl .pagination {
+	float: left;
+}
+
+.rtl .column1 {
+	float: right;
+}
+.rtl .column2 {
+	float: left;
+}
+
+/* forums.css */
+
+.rtl .topiclist dt {
+	float: right;
+}
+.rtl dd.views, .rtl dd.topics, .rtl dd.posts {
+	float: right;
+}
+.rtl dd.lastpost {
+	float: right;
+}
+
+.rtl .row dt {
+	padding: 0 30px 0 0;
+	margin: 0 0 0 -30px;
+	/* position topic icon */
+	background-position: 99% 12px;
+}
+
+.rtl .topics .row dt {
+	padding: 0 25px 0 0;
+	margin: 0 0 0 -25px;
+}
+
+.rtl .topics dl.icon {
+	background-position: 100% 5px;
+}
+
+.rtl ul.topiclist li.row dt a.subforum {
+	padding: 0 10px 0 0;
+	background-position: 100% 3px;
+}
+
+.rtl .rules ol, .rtl .rules ul {
+	margin: 5px 30px 5px 0;
+}
+
+.rtl .forum-image {
+	float: right;
+}
+.rtl dl.icon {
+	background-position: 100% 0;
+}
+
+/* content.css */
+.rtl .postbody {
+	float: right;
+}
+.rtl .postprofile {
+	float: left;
+	border-left: none;
+	padding: 0 1% 0 0;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+}
+.rtl .content ol, .rtl .content ul {
+	margin: 5px 30px 5px 0;
+}
+.rtl .online .postprofile {
+	background-position: 0 0;
+}
+.rtl .back2top a {
+	float: left;
+}
+
+.rtl .top2 {
+	background-position: 100% 3px;
+}
+.rtl #smiley-box {
+	float: left;
+}
+.rtl table .name {
+	text-align: right;
+}
+
+.rtl table .rank-img {
+	float: left;
+}
+
+/* buttons.css */
+
+.rtl .buttons {
+	float: right;
+}
+
+.rtl .buttons div {
+	float: right;
+}
+
+.rtl .sitehome, .rtl .icon-faq, .rtl .icon-members, .rtl .icon-home,
+.rtl .icon-ucp, .rtl .icon-register, .rtl .icon-logout, .rtl .icon-bookmark,
+.rtl .icon-bump, .rtl .icon-subscribe, .rtl .icon-unsubscribe, .rtl .icon-pages,
+.rtl .icon-search {
+	background-position: 99% 50%;
+	padding: 1px 22px 0 0;
+}
+
+.rtl ul.profile-icons li {
+	float: right;
+	margin: 0 0 3px 6px;
+}
+
+.rtl .postbody ul.profile-icons {
+	float: left;
+}
+
+/* cp.css */
+.rtl #tabs a {
+	float: right;
+	margin: 0 0 0 5px;
+}
+
+.rtl #cp-menu {
+	float: right;
+}
+.rtl #cp-main {
+	float: left;
+}
+
+.rtl dd.extra, .rtl dd.option {
+	float: right;
+}
+.rtl dd.option {
+	text-align: right;
+}
+
+.rtl dd.time {
+	float: right;
+}
+
+.rtl dd.mark {
+	float: left;
+}
+
+.rtl dd.info {
+	float: right;
+}
+
+.rtl #cp-main .topiclist dt {
+	float: right;
+}
+
+.rtl #cp-main li.header dt {
+	right: 0;
+}
+
+.rtl #cp-main dl.icon {
+	background-position: 100% 50%;
+}
+
+.rtl #minitabs a {
+	float: right;
+	margin: 0 0 0 5px;
+}
+
+/* forms.css */
+.rtl fieldset dt {
+	float: right;
+}
+.rtl fieldset dd {
+	margin: 0 41% 10px 0;
+}
+.rtl fieldset.quickmod {
+	text-align: left;
+}
+
+.rtl #jumpbox {
+	text-align: left;
+}
